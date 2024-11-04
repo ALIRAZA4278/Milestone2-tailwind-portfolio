@@ -2,100 +2,83 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+    <div>
+      <section
+        id="home"
+        className="flex flex-col mt-28 md:mt-0 md:flex-row justify-center gap-10 px-4 md:px-8 h-[80vh] mix-[700px]:h-[100%] items-center mx-[10vw]"
+      >
+        {/* Image */}
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+          src="/Pic.png"
+          alt="Ali Raza"
+          width={700}
+          height={400}
+          className="w-[220px] h-[212px] mt-50 md:mt-0 rounded-full shadow-lg shadow-blue-600 transition-transform duration-300 hover:scale-105 hover:shadow-xl cursor-pointer
+            sm:w-[200px] sm:h-[200px]
+            md:w-[700px] md:h-[400px]
+            xs:w-[250px] xs:h-[250px]"
         />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        {/* Text Section */}
+        <div className="text-center md:text-left px-4 md:px-0" id="text-section">
+          <h1 className="text-2xl sm:text-2xl md:text-4xl lg:text-4xl font-bold max-w-full">
+            Hi, It&apos;s <span className="text-blue-600">Ali Raza</span>
+          </h1>
+          <h3 className="text-2xl sm:text-3xl md:text-2xl lg:text-3xl font-bold mt-4 max-w-full">
+            I&apos;m a <span className="relative inline-block typing-text"></span>
+          </h3>
+          <p className="text-base sm:text-lg md:text-sm lg:text-lg font-semibold mt-4 max-w-full mx-auto md:mx-0">
+            &quot;Ali Raza, a 19-year-old web and chatbot developer with a passion for crafting innovative digital solutions. With a strong foundation in programming languages like HTML, CSS &amp; JavaScript, I design and develop responsive websites and conversational chatbots that engage users and simplify interactions.&quot;
+          </p>
+
+          {/* Social Icons */}
+          <div className="flex justify-center md:justify-start space-x-4 mt-8">
+            <a
+              href="https://www.linkedin.com/in/ali-raza-4a5762282/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 flex justify-center items-center border-2 border-blue-600 rounded-full text-blue-600 hover:bg-blue-200 hover:text-black transition duration-300"
+            >
+              <Image src="/Linkedin.svg" alt="LinkedIn" width={40} height={40} />
+            </a>
+            <a
+              href="https://github.com/ALIRAZA4278"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 flex justify-center items-center border-2 border-blue-600 rounded-full text-blue-600 hover:bg-blue-200 hover:text-black transition duration-300"
+            >
+              <Image src="/github.svg" alt="GitHub" width={40} height={40} />
+            </a>
+            <a
+              href="https://x.com/AliFaro45370063"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 flex justify-center items-center border-2 border-blue-600 rounded-full text-blue-600 hover:bg-blue-200 hover:text-black transition duration-300"
+            >
+              <Image src="/twitter.svg" alt="Twitter" width={40} height={40} />
+            </a>
+            <a
+              href="https://instagram.com/its_zyrox_x"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 flex justify-center items-center border-2 border-blue-600 rounded-full text-blue-600 hover:bg-blue-200 transition duration-300"
+            >
+              <Image src="/instagram.svg" alt="Instagram" width={40} height={40} />
+            </a>
+          </div>
+
+          {/* Action Button */}
+          <div className="flex flex-col md:flex-row mt-0 space-y-4 md:space-y-0 md:space-x-4 mx-auto">
+            <a
+              href="/Projects"
+              className="bg-blue-800 text-white p-4 text-xl rounded-full hover:opacity-80 transition-opacity duration-300 text-center mt-4"
+            >
+              Explore Work
+            </a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
     </div>
   );
 }
+
