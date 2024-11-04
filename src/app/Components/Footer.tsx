@@ -76,7 +76,7 @@ const Footer = () => {
 
         <div>
           <small className="text-gray-500 border-b border-gray-500 py-2 uppercase mt-15 mb-4 text-md">
-            Don't know if it fits your needs or not? <Link className="underline text-blue-500" href="#">Let me help!</Link>
+            Don&apos;t know if it fits your needs or not? <Link className="underline text-blue-500" href="#">Let me help!</Link>
           </small>
         </div>
       </section>

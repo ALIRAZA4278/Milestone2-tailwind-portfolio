@@ -33,7 +33,7 @@ export default function About() {
         <p className="mt-4 text-lg text-gray-350 mx-auto max-w-4xl">
           My expertise lies in crafting robust web applications using the MERN
           stack, always with a keen eye on enhancing user experience. But
-          that's not all – I'm also immersing myself in the dynamic realms of
+          that&apos;s not all – I&apos;m also immersing myself in the dynamic realms of
           AI and chatbot development, eager to unravel their endless
           possibilities.
         </p>
